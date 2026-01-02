@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Tattoo Discovery Platform | Find the artist, not just the tattoo{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+{% endblock %}
+
+{% block body %}
+    <main class="page">
+        <section class="hero">
+            <p class="eyebrow">Tattoo discovery platform</p>
+            <h1>Find the artist, not just the tattoo.</h1>
+            <p class="subheadline">A tattoo discovery platform where every tattoo is credited and artists are discovered by style and location.</p>
+            <div class="cta">
+                <p>Artist? Join soon.</p>
+                <p>Looking for a tattoo? Discover artists near you.</p>
+            </div>
+        </section>
+
+        <section class="content-grid">
+            <article>
+                <h2>The Problem</h2>
+                <p>Tattoo inspiration is scattered across social platforms without artist credit, making it hard to find who created the work and even harder to discover new artists.</p>
+            </article>
+            <article>
+                <h2>The Solution</h2>
+                <p>Artist-first portfolios with guaranteed attribution, detailed style tags, and location-based discovery so every piece leads back to the person behind the needle.</p>
+            </article>
+        </section>
+
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <ol>
+                <li>
+                    <h3>Artists create a profile</h3>
+                    <p>Set up a portfolio that highlights specialties, availability, and studio location.</p>
+                </li>
+                <li>
+                    <h3>Upload and tag their work</h3>
+                    <p>Share healed and in-progress pieces with style tags and booking details.</p>
+                </li>
+                <li>
+                    <h3>Get discovered by people nearby</h3>
+                    <p>Connect with people searching by style, artist name, or distance.</p>
+                </li>
+            </ol>
+        </section>
+
+        <section class="who-for">
+            <h2>Who It's For</h2>
+            <ul>
+                <li>Tattoo artists</li>
+                <li>Tattoo studios</li>
+                <li>People looking for tattoos</li>
+            </ul>
+        </section>
+    </main>
+{% endblock %}
