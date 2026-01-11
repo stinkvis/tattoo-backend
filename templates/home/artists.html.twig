@@ -28,26 +28,33 @@
         </header>
 
         <main>
-            <section class="final-cta" id="final-cta">
-                <div class="cta-glow"></div>
-                <div class="cta-content">
-                    <h2>{{ 'cta.join_title'|trans }}</h2>
-                    <p>{{ 'cta.subtitle'|trans }}</p>
-                    <div class="cta-actions">
-                        <a class="button primary" href="#">{{ 'buttons.join_artist_studio'|trans }}
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M5 12h14" />
-                                <path d="M13 6l6 6-6 6" />
-                            </svg>
-                        </a>
-                        <a class="button secondary" href="#">{{ 'buttons.contact_us'|trans }}</a>
-                    </div>
-                    <div class="cta-footnote">
-                        <span>{{ 'cta.available'|trans }}</span>
-                        <span>•</span>
-                        <span>{{ 'cta.launching'|trans }}</span>
+            <section class="hero hero--cta final-cta" id="final-cta">
+                <div class="hero-background"></div>
+                <div class="hero-orb hero-orb-primary"></div>
+                <div class="hero-orb hero-orb-secondary"></div>
+                <div class="hero-shell">
+                    <div class="hero-content">
+                        <h2 class="hero-title">
+                            <span class="hero-title-main">{{ 'cta.join_title'|trans }}</span>
+                        </h2>
+                        <p class="hero-subtitle">{{ 'cta.subtitle'|trans }}</p>
+                        <div class="hero-actions cta-actions">
+                            <a class="button primary" href="#">{{ 'buttons.join_artist_studio'|trans }}
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M5 12h14" />
+                                    <path d="M13 6l6 6-6 6" />
+                                </svg>
+                            </a>
+                            <a class="button secondary" href="#">{{ 'buttons.contact_us'|trans }}</a>
+                        </div>
+                        <div class="hero-footnote cta-footnote">
+                            <span>{{ 'cta.available'|trans }}</span>
+                            <span>•</span>
+                            <span>{{ 'cta.launching'|trans }}</span>
+                        </div>
                     </div>
                 </div>
+                <div class="hero-gradient"></div>
             </section>
 
             <section class="features" id="features">
