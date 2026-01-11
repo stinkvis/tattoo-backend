@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}ETCHD | More tattoo inquiries in Bali{% endblock %}
+{% block title %}{{ 'meta.title.artists'|trans }}{% endblock %}
 
 {% block stylesheets %}
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
@@ -10,15 +10,15 @@
     <div class="page">
         <header class="site-header">
             <div class="header-shell">
-                <div class="logo">ETCHD</div>
+                <div class="logo">{{ 'brand.name'|trans }}</div>
                 <nav class="nav">
-                    <a href="#features">Why ETCHD</a>
-                    <a href="#how-it-works">How It Works</a>
-                    <a href="#artists">For Studios</a>
+                    <a href="#features">{{ 'nav.why_etchd'|trans }}</a>
+                    <a href="#how-it-works">{{ 'nav.how_it_works'|trans }}</a>
+                    <a href="#artists">{{ 'nav.for_studios'|trans }}</a>
                 </nav>
                 <div class="header-actions">
-                    <a class="button primary" href="#final-cta">Join as artist / studio</a>
-                    <button class="icon-button" type="button" aria-label="Open menu">
+                    <a class="button primary" href="#final-cta">{{ 'buttons.join_artist_studio'|trans }}</a>
+                    <button class="icon-button" type="button" aria-label="{{ 'nav.open_menu'|trans }}">
                         <svg viewBox="0 0 24 24" aria-hidden="true">
                             <path d="M3 6h18M3 12h18M3 18h18" />
                         </svg>
@@ -32,15 +32,15 @@
                 <div class="hero-glow hero-glow-left"></div>
                 <div class="hero-glow hero-glow-right"></div>
                 <div class="hero-content">
-                    <h1>Real tattoo inquiries.<br><span>Not likes.</span></h1>
-                    <p>ETCHD helps artists and studios in Bali get discovered by clients who are ready to get tattooed. Show your work, get credited, and receive structured requests — without fighting algorithms.</p>
+                    <h1>{{ 'hero.title_main'|trans }}<br><span>{{ 'hero.title_emphasis'|trans }}</span></h1>
+                    <p>{{ 'hero.subtitle'|trans }}</p>
                 </div>
                 <div class="hero-device">
                     <div class="device-glow"></div>
                     <div class="device-frame">
                         <div class="device-screen">
                             <div class="device-header">
-                                <span>ETCHD</span>
+                                <span>{{ 'brand.name'|trans }}</span>
                                 <span class="device-pill"></span>
                             </div>
                             <div class="device-body">
@@ -55,8 +55,8 @@
 
             <section class="features" id="features">
                 <div class="section-title">
-                    <h2>Built to bring you clients</h2>
-                    <p>A discovery platform that turns portfolios into serious requests.</p>
+                    <h2>{{ 'features.title'|trans }}</h2>
+                    <p>{{ 'features.subtitle'|trans }}</p>
                 </div>
                 <div class="feature-grid">
                     <article class="feature-card">
@@ -66,8 +66,8 @@
                                 <path d="M21 21l-4.3-4.3" />
                             </svg>
                         </div>
-                        <h3>Get discovered by style + location</h3>
-                        <p>Clients browse by style, placement, and where you tattoo — so you show up for the right work.</p>
+                        <h3>{{ 'features.cards.discover_title'|trans }}</h3>
+                        <p>{{ 'features.cards.discover_body'|trans }}</p>
                     </article>
                     <article class="feature-card">
                         <div class="icon">
@@ -78,8 +78,8 @@
                                 <path d="M22 20c0-2.21-3.13-4-7-4" />
                             </svg>
                         </div>
-                        <h3>Credit on every tattoo</h3>
-                        <p>No more reposts without attribution. Your name stays connected to your work.</p>
+                        <h3>{{ 'features.cards.credit_title'|trans }}</h3>
+                        <p>{{ 'features.cards.credit_body'|trans }}</p>
                     </article>
                     <article class="feature-card">
                         <div class="icon">
@@ -88,8 +88,8 @@
                                 <path d="M16 2v4M8 2v4M3 10h18" />
                             </svg>
                         </div>
-                        <h3>Structured client requests</h3>
-                        <p>Receive clear inquiries with idea, references, placement, and timing — less back-and-forth.</p>
+                        <h3>{{ 'features.cards.requests_title'|trans }}</h3>
+                        <p>{{ 'features.cards.requests_body'|trans }}</p>
                     </article>
                     <article class="feature-card">
                         <div class="icon">
@@ -97,37 +97,37 @@
                                 <path d="M12 2l2.1 4.3L19 7l-3.5 3.4.8 4.9L12 13l-4.3 2.3.8-4.9L5 7l4.9-.7L12 2z" />
                             </svg>
                         </div>
-                        <h3>Studio routing (inbox)</h3>
-                        <p>Studios can receive requests and assign them to the right artist. Clean intake, better matching.</p>
+                        <h3>{{ 'features.cards.routing_title'|trans }}</h3>
+                        <p>{{ 'features.cards.routing_body'|trans }}</p>
                     </article>
                 </div>
             </section>
 
             <section class="how-it-works" id="how-it-works">
                 <div class="section-title">
-                    <h2>How It Works</h2>
-                    <p>Onboard fast. Start receiving requests.</p>
+                    <h2>{{ 'how_it_works.title'|trans }}</h2>
+                    <p>{{ 'how_it_works.subtitle'|trans }}</p>
                 </div>
                 <div class="steps">
                     <article class="step">
                         <div class="step-number">01</div>
                         <div class="step-content">
-                            <h3>Create your profile</h3>
-                            <p>Add your styles, location, studio, and contact details.</p>
+                            <h3>{{ 'how_it_works.steps.profile_title'|trans }}</h3>
+                            <p>{{ 'how_it_works.steps.profile_body'|trans }}</p>
                         </div>
                     </article>
                     <article class="step">
                         <div class="step-number">02</div>
                         <div class="step-content">
-                            <h3>Upload your best work</h3>
-                            <p>Post tattoos with style tags so clients find you for the right pieces.</p>
+                            <h3>{{ 'how_it_works.steps.upload_title'|trans }}</h3>
+                            <p>{{ 'how_it_works.steps.upload_body'|trans }}</p>
                         </div>
                     </article>
                     <article class="step">
                         <div class="step-number">03</div>
                         <div class="step-content">
-                            <h3>Get serious inquiries</h3>
-                            <p>Clients reach out directly — or studios route requests to the best-fit artist.</p>
+                            <h3>{{ 'how_it_works.steps.inquiries_title'|trans }}</h3>
+                            <p>{{ 'how_it_works.steps.inquiries_body'|trans }}</p>
                         </div>
                     </article>
                 </div>
@@ -135,40 +135,40 @@
 
             <section class="social-proof" id="artists">
                 <div class="section-title">
-                    <h2>Designed for tattoo culture</h2>
-                    <p>Less noise. Better clients. More control.</p>
+                    <h2>{{ 'social_proof.title'|trans }}</h2>
+                    <p>{{ 'social_proof.subtitle'|trans }}</p>
                 </div>
                 <div class="testimonial-grid">
                     <article class="testimonial">
                         <div class="quote">“</div>
-                        <p>ETCHD feels like a digital front desk — clients come in with a real idea, not just a DM.</p>
+                        <p>{{ 'testimonials.first.quote'|trans }}</p>
                         <div class="profile">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" alt="Maria Santos">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" alt="{{ 'testimonials.first.name'|trans }}">
                             <div>
-                                <span class="name">Maria Santos</span>
-                                <span class="role">Studio Manager, Bali</span>
+                                <span class="name">{{ 'testimonials.first.name'|trans }}</span>
+                                <span class="role">{{ 'testimonials.first.role'|trans }}</span>
                             </div>
                         </div>
                     </article>
                     <article class="testimonial">
                         <div class="quote">“</div>
-                        <p>I don’t need more followers. I need better inquiries. ETCHD is built for that.</p>
+                        <p>{{ 'testimonials.second.quote'|trans }}</p>
                         <div class="profile">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="James Chen">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="{{ 'testimonials.second.name'|trans }}">
                             <div>
-                                <span class="name">James Chen</span>
-                                <span class="role">Tattoo Artist, Bali</span>
+                                <span class="name">{{ 'testimonials.second.name'|trans }}</span>
+                                <span class="role">{{ 'testimonials.second.role'|trans }}</span>
                             </div>
                         </div>
                     </article>
                     <article class="testimonial">
                         <div class="quote">“</div>
-                        <p>Requests come structured, so I can reply fast and avoid time-wasters.</p>
+                        <p>{{ 'testimonials.third.quote'|trans }}</p>
                         <div class="profile">
-                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop" alt="Alex Rivera">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop" alt="{{ 'testimonials.third.name'|trans }}">
                             <div>
-                                <span class="name">Alex Rivera</span>
-                                <span class="role">Tattoo Artist, Bali</span>
+                                <span class="name">{{ 'testimonials.third.name'|trans }}</span>
+                                <span class="role">{{ 'testimonials.third.role'|trans }}</span>
                             </div>
                         </div>
                     </article>
@@ -178,21 +178,21 @@
             <section class="final-cta" id="final-cta">
                 <div class="cta-glow"></div>
                 <div class="cta-content">
-                    <h2>Join the Bali launch<br><span>as an artist or studio</span></h2>
-                    <p>We’re onboarding a limited group of Bali artists and studios first. Set up your profile and start getting discovered by clients who are ready to book.</p>
+                    <h2>{{ 'cta.title_main'|trans }}<br><span>{{ 'cta.title_emphasis'|trans }}</span></h2>
+                    <p>{{ 'cta.subtitle'|trans }}</p>
                     <div class="cta-actions">
-                        <a class="button primary" href="#">Join as artist / studio
+                        <a class="button primary" href="#">{{ 'buttons.join_artist_studio'|trans }}
                             <svg viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M5 12h14" />
                                 <path d="M13 6l6 6-6 6" />
                             </svg>
                         </a>
-                        <a class="button secondary" href="#">Contact us</a>
+                        <a class="button secondary" href="#">{{ 'buttons.contact_us'|trans }}</a>
                     </div>
                     <div class="cta-footnote">
-                        <span>Available on iOS &amp; Android</span>
+                        <span>{{ 'cta.available'|trans }}</span>
                         <span>•</span>
-                        <span>Launching soon in Bali</span>
+                        <span>{{ 'cta.launching'|trans }}</span>
                     </div>
                 </div>
             </section>
@@ -200,13 +200,13 @@
 
         <footer class="site-footer">
             <div class="footer-shell">
-                <div class="logo">ETCHD</div>
+                <div class="logo">{{ 'brand.name'|trans }}</div>
                 <div class="footer-links">
-                    <a href="#">Privacy</a>
-                    <a href="#">Terms</a>
-                    <a href="#">Contact</a>
+                    <a href="#">{{ 'footer.privacy'|trans }}</a>
+                    <a href="#">{{ 'footer.terms'|trans }}</a>
+                    <a href="#">{{ 'footer.contact'|trans }}</a>
                 </div>
-                <div class="footer-note">© 2026 ETCHD. Made for tattoo culture.</div>
+                <div class="footer-note">{{ 'footer.copyright'|trans }}</div>
             </div>
         </footer>
     </div>

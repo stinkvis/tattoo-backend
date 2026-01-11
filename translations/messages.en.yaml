@@ -1,0 +1,109 @@
+brand:
+  name: "ETCHD"
+
+meta:
+  title:
+    default: "Welcome!"
+    artists: "ETCHD | More tattoo inquiries in Bali"
+    consumer: "ETCHD | Find your tattoo artist in Bali"
+
+nav:
+  why_etchd: "Why ETCHD"
+  how_it_works: "How It Works"
+  for_studios: "For Studios"
+  features: "Features"
+  for_you: "For You"
+  open_menu: "Open menu"
+
+hero:
+  title_main: "Real tattoo inquiries."
+  title_emphasis: "Not likes."
+  subtitle: "ETCHD helps artists and studios in Bali get discovered by clients who are ready to get tattooed. Show your work, get credited, and receive structured requests — without fighting algorithms."
+
+features:
+  title: "Built to bring you clients"
+  subtitle: "A discovery platform that turns portfolios into serious requests."
+  cards:
+    discover_title: "Get discovered by style + location"
+    discover_body: "Clients browse by style, placement, and where you tattoo — so you show up for the right work."
+    credit_title: "Credit on every tattoo"
+    credit_body: "No more reposts without attribution. Your name stays connected to your work."
+    requests_title: "Structured client requests"
+    requests_body: "Receive clear inquiries with idea, references, placement, and timing — less back-and-forth."
+    routing_title: "Studio routing (inbox)"
+    routing_body: "Studios can receive requests and assign them to the right artist. Clean intake, better matching."
+
+how_it_works:
+  title: "How It Works"
+  subtitle: "Onboard fast. Start receiving requests."
+  steps:
+    profile_title: "Create your profile"
+    profile_body: "Add your styles, location, studio, and contact details."
+    upload_title: "Upload your best work"
+    upload_body: "Post tattoos with style tags so clients find you for the right pieces."
+    inquiries_title: "Get serious inquiries"
+    inquiries_body: "Clients reach out directly — or studios route requests to the best-fit artist."
+  consumer_subtitle: "From inspiration to inquiry in minutes"
+  consumer:
+    steps:
+      discover_title: "Discover your style"
+      discover_body: "Scroll tattoo work and find artists in Bali who match the style you want."
+      pick_title: "Pick the right artist"
+      pick_body: "Open the portfolio, check the studio, and choose with confidence."
+      reach_title: "Reach out with your idea"
+      reach_body: "Send your request and take the next steps directly with the artist or studio."
+
+social_proof:
+  title: "Designed for tattoo culture"
+  subtitle: "Less noise. Better clients. More control."
+
+testimonials:
+  first:
+    quote: "ETCHD feels like a digital front desk — clients come in with a real idea, not just a DM."
+    name: "Maria Santos"
+    role: "Studio Manager, Bali"
+  second:
+    quote: "I don’t need more followers. I need better inquiries. ETCHD is built for that."
+    name: "James Chen"
+    role: "Tattoo Artist, Bali"
+  third:
+    quote: "Requests come structured, so I can reply fast and avoid time-wasters."
+    name: "Alex Rivera"
+    role: "Tattoo Artist, Bali"
+
+cta:
+  title_main: "Join the Bali launch"
+  title_emphasis: "as an artist or studio"
+  subtitle: "We’re onboarding a limited group of Bali artists and studios first. Set up your profile and start getting discovered by clients who are ready to book."
+  join_title: "Join ETCHD"
+  consumer_title_main: "Your next tattoo"
+  consumer_title_emphasis: "starts here"
+  consumer_subtitle: "Discover tattoo artists and studios in Bali by style and location. See real portfolios with proper artist credit, then reach out with your idea when you’re ready."
+  available: "Available on iOS & Android"
+  launching: "Launching soon in Bali"
+
+buttons:
+  join_artist_studio: "Join as artist / studio"
+  join_waitlist: "Join the waitlist"
+  contact_us: "Contact us"
+  explore_artists: "Explore artists"
+
+consumer:
+  features:
+    title: "Made for choosing the right artist"
+    subtitle: "Browse by style. Save favorites. Send a serious request."
+    cards:
+      browse_title: "Browse by style + location"
+      browse_body: "Explore tattoos near you and filter by style, placement, and studios — with every piece credited to the artist."
+      portfolio_title: "See the real portfolio"
+      portfolio_body: "Clean artist and studio pages with style tags and recent work — so you know what you’re getting."
+      request_title: "Send a tattoo request"
+      request_body: "Message an artist or studio with your idea and references. No follower games. No endless DMs."
+      save_title: "Save & shortlist"
+      save_body: "Save tattoos you love, compare artists, and reach out when you’re ready to commit."
+
+footer:
+  privacy: "Privacy"
+  terms: "Terms"
+  contact: "Contact"
+  copyright: "© 2026 ETCHD. Made for tattoo culture."

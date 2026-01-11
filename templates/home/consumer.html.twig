@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}ETCHD | Find your tattoo artist in Bali{% endblock %}
+{% block title %}{{ 'meta.title.consumer'|trans }}{% endblock %}
 
 {% block stylesheets %}
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
@@ -10,15 +10,15 @@
     <div class="page">
         <header class="site-header">
             <div class="header-shell">
-                <div class="logo">ETCHD</div>
+                <div class="logo">{{ 'brand.name'|trans }}</div>
                 <nav class="nav">
-                    <a href="#features">Features</a>
-                    <a href="#how-it-works">How It Works</a>
-                    <a href="#artists">For You</a>
+                    <a href="#features">{{ 'nav.features'|trans }}</a>
+                    <a href="#how-it-works">{{ 'nav.how_it_works'|trans }}</a>
+                    <a href="#artists">{{ 'nav.for_you'|trans }}</a>
                 </nav>
                 <div class="header-actions">
-                    <a class="button primary" href="#final-cta">Join the waitlist</a>
-                    <button class="icon-button" type="button" aria-label="Open menu">
+                    <a class="button primary" href="#final-cta">{{ 'buttons.join_waitlist'|trans }}</a>
+                    <button class="icon-button" type="button" aria-label="{{ 'nav.open_menu'|trans }}">
                         <svg viewBox="0 0 24 24" aria-hidden="true">
                             <path d="M3 6h18M3 12h18M3 18h18" />
                         </svg>
@@ -31,29 +31,29 @@
             <section class="final-cta" id="final-cta">
                 <div class="cta-glow"></div>
                 <div class="cta-content">
-                    <h2>Your next tattoo<br><span>starts here</span></h2>
-                    <p>Discover tattoo artists and studios in Bali by style and location. See real portfolios with proper artist credit, then reach out with your idea when you’re ready.</p>
+                    <h2>{{ 'cta.consumer_title_main'|trans }}<br><span>{{ 'cta.consumer_title_emphasis'|trans }}</span></h2>
+                    <p>{{ 'cta.consumer_subtitle'|trans }}</p>
                     <div class="cta-actions">
-                        <a class="button primary" href="#">Join the waitlist
+                        <a class="button primary" href="#">{{ 'buttons.join_waitlist'|trans }}
                             <svg viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M5 12h14" />
                                 <path d="M13 6l6 6-6 6" />
                             </svg>
                         </a>
-                        <a class="button secondary" href="#">Explore artists</a>
+                        <a class="button secondary" href="#">{{ 'buttons.explore_artists'|trans }}</a>
                     </div>
                     <div class="cta-footnote">
-                        <span>Available on iOS &amp; Android</span>
+                        <span>{{ 'cta.available'|trans }}</span>
                         <span>•</span>
-                        <span>Launching soon in Bali</span>
+                        <span>{{ 'cta.launching'|trans }}</span>
                     </div>
                 </div>
             </section>
 
             <section class="features" id="features">
                 <div class="section-title">
-                    <h2>Made for choosing the right artist</h2>
-                    <p>Browse by style. Save favorites. Send a serious request.</p>
+                    <h2>{{ 'consumer.features.title'|trans }}</h2>
+                    <p>{{ 'consumer.features.subtitle'|trans }}</p>
                 </div>
                 <div class="feature-grid">
                     <article class="feature-card">
@@ -63,8 +63,8 @@
                                 <path d="M21 21l-4.3-4.3" />
                             </svg>
                         </div>
-                        <h3>Browse by style + location</h3>
-                        <p>Explore tattoos near you and filter by style, placement, and studios — with every piece credited to the artist.</p>
+                        <h3>{{ 'consumer.features.cards.browse_title'|trans }}</h3>
+                        <p>{{ 'consumer.features.cards.browse_body'|trans }}</p>
                     </article>
                     <article class="feature-card">
                         <div class="icon">
@@ -75,8 +75,8 @@
                                 <path d="M22 20c0-2.21-3.13-4-7-4" />
                             </svg>
                         </div>
-                        <h3>See the real portfolio</h3>
-                        <p>Clean artist and studio pages with style tags and recent work — so you know what you’re getting.</p>
+                        <h3>{{ 'consumer.features.cards.portfolio_title'|trans }}</h3>
+                        <p>{{ 'consumer.features.cards.portfolio_body'|trans }}</p>
                     </article>
                     <article class="feature-card">
                         <div class="icon">
@@ -85,8 +85,8 @@
                                 <path d="M16 2v4M8 2v4M3 10h18" />
                             </svg>
                         </div>
-                        <h3>Send a tattoo request</h3>
-                        <p>Message an artist or studio with your idea and references. No follower games. No endless DMs.</p>
+                        <h3>{{ 'consumer.features.cards.request_title'|trans }}</h3>
+                        <p>{{ 'consumer.features.cards.request_body'|trans }}</p>
                     </article>
                     <article class="feature-card">
                         <div class="icon">
@@ -94,37 +94,37 @@
                                 <path d="M12 2l2.1 4.3L19 7l-3.5 3.4.8 4.9L12 13l-4.3 2.3.8-4.9L5 7l4.9-.7L12 2z" />
                             </svg>
                         </div>
-                        <h3>Save &amp; shortlist</h3>
-                        <p>Save tattoos you love, compare artists, and reach out when you’re ready to commit.</p>
+                        <h3>{{ 'consumer.features.cards.save_title'|trans }}</h3>
+                        <p>{{ 'consumer.features.cards.save_body'|trans }}</p>
                     </article>
                 </div>
             </section>
 
             <section class="how-it-works" id="how-it-works">
                 <div class="section-title">
-                    <h2>How It Works</h2>
-                    <p>From inspiration to inquiry in minutes</p>
+                    <h2>{{ 'how_it_works.title'|trans }}</h2>
+                    <p>{{ 'how_it_works.consumer_subtitle'|trans }}</p>
                 </div>
                 <div class="steps">
                     <article class="step">
                         <div class="step-number">01</div>
                         <div class="step-content">
-                            <h3>Discover your style</h3>
-                            <p>Scroll tattoo work and find artists in Bali who match the style you want.</p>
+                            <h3>{{ 'how_it_works.consumer.steps.discover_title'|trans }}</h3>
+                            <p>{{ 'how_it_works.consumer.steps.discover_body'|trans }}</p>
                         </div>
                     </article>
                     <article class="step">
                         <div class="step-number">02</div>
                         <div class="step-content">
-                            <h3>Pick the right artist</h3>
-                            <p>Open the portfolio, check the studio, and choose with confidence.</p>
+                            <h3>{{ 'how_it_works.consumer.steps.pick_title'|trans }}</h3>
+                            <p>{{ 'how_it_works.consumer.steps.pick_body'|trans }}</p>
                         </div>
                     </article>
                     <article class="step">
                         <div class="step-number">03</div>
                         <div class="step-content">
-                            <h3>Reach out with your idea</h3>
-                            <p>Send your request and take the next steps directly with the artist or studio.</p>
+                            <h3>{{ 'how_it_works.consumer.steps.reach_title'|trans }}</h3>
+                            <p>{{ 'how_it_works.consumer.steps.reach_body'|trans }}</p>
                         </div>
                     </article>
                 </div>
@@ -137,13 +137,13 @@
 
         <footer class="site-footer">
             <div class="footer-shell">
-                <div class="logo">ETCHD</div>
+                <div class="logo">{{ 'brand.name'|trans }}</div>
                 <div class="footer-links">
-                    <a href="#">Privacy</a>
-                    <a href="#">Terms</a>
-                    <a href="#">Contact</a>
+                    <a href="#">{{ 'footer.privacy'|trans }}</a>
+                    <a href="#">{{ 'footer.terms'|trans }}</a>
+                    <a href="#">{{ 'footer.contact'|trans }}</a>
                 </div>
-                <div class="footer-note">© 2026 ETCHD. Made for tattoo culture.</div>
+                <div class="footer-note">{{ 'footer.copyright'|trans }}</div>
             </div>
         </footer>
     </div>
