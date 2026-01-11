@@ -6,6 +6,9 @@ framework:
         default_path: '%kernel.project_dir%/translations'
         fallbacks:
             - en
+        enabled_locales:
+            - en
+            - id
 
     # Note that the session will be started ONLY if you read or write from it.
     session: true
