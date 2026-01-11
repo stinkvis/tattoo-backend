@@ -28,26 +28,34 @@
         </header>
 
         <main>
-            <section class="final-cta" id="final-cta">
-                <div class="cta-glow"></div>
-                <div class="cta-content">
-                    <h2>{{ 'cta.consumer_title_main'|trans }}<br><span>{{ 'cta.consumer_title_emphasis'|trans }}</span></h2>
-                    <p>{{ 'cta.consumer_subtitle'|trans }}</p>
-                    <div class="cta-actions">
-                        <a class="button primary" href="#">{{ 'buttons.join_waitlist'|trans }}
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M5 12h14" />
-                                <path d="M13 6l6 6-6 6" />
-                            </svg>
-                        </a>
-                        <a class="button secondary" href="#">{{ 'buttons.explore_artists'|trans }}</a>
-                    </div>
-                    <div class="cta-footnote">
-                        <span>{{ 'cta.available'|trans }}</span>
-                        <span>•</span>
-                        <span>{{ 'cta.launching'|trans }}</span>
+            <section class="hero hero--cta final-cta" id="final-cta">
+                <div class="hero-background"></div>
+                <div class="hero-orb hero-orb-primary"></div>
+                <div class="hero-orb hero-orb-secondary"></div>
+                <div class="hero-shell">
+                    <div class="hero-content">
+                        <h2 class="hero-title">
+                            <span class="hero-title-main">{{ 'cta.consumer_title_main'|trans }}</span>
+                            <span class="hero-title-gradient">{{ 'cta.consumer_title_emphasis'|trans }}</span>
+                        </h2>
+                        <p class="hero-subtitle">{{ 'cta.consumer_subtitle'|trans }}</p>
+                        <div class="hero-actions cta-actions">
+                            <a class="button primary" href="#">{{ 'buttons.join_waitlist'|trans }}
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M5 12h14" />
+                                    <path d="M13 6l6 6-6 6" />
+                                </svg>
+                            </a>
+                            <a class="button secondary" href="#">{{ 'buttons.explore_artists'|trans }}</a>
+                        </div>
+                        <div class="hero-footnote cta-footnote">
+                            <span>{{ 'cta.available'|trans }}</span>
+                            <span>•</span>
+                            <span>{{ 'cta.launching'|trans }}</span>
+                        </div>
                     </div>
                 </div>
+                <div class="hero-gradient"></div>
             </section>
 
             <section class="features" id="features">
