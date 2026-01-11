@@ -1,0 +1,109 @@
+brand:
+  name: "ETCHD"
+
+meta:
+  title:
+    default: "Selamat datang!"
+    artists: "ETCHD | Lebih banyak permintaan tato di Bali"
+    consumer: "ETCHD | Temukan seniman tato di Bali"
+
+nav:
+  why_etchd: "Mengapa ETCHD"
+  how_it_works: "Cara Kerjanya"
+  for_studios: "Untuk Studio"
+  features: "Fitur"
+  for_you: "Untuk Anda"
+  open_menu: "Buka menu"
+
+hero:
+  title_main: "Permintaan tato yang nyata."
+  title_emphasis: "Bukan likes."
+  subtitle: "ETCHD membantu seniman dan studio di Bali ditemukan klien yang siap ditato. Tampilkan karya Anda, dapatkan kredit, dan terima permintaan yang terstruktur — tanpa berjuang melawan algoritma."
+
+features:
+  title: "Dibuat untuk mendatangkan klien"
+  subtitle: "Platform discovery yang mengubah portofolio menjadi permintaan serius."
+  cards:
+    discover_title: "Ditemukan lewat gaya + lokasi"
+    discover_body: "Klien menelusuri berdasarkan gaya, penempatan, dan lokasi Anda menato — sehingga Anda muncul untuk pekerjaan yang tepat."
+    credit_title: "Kredit di setiap tato"
+    credit_body: "Tidak ada lagi repost tanpa atribusi. Nama Anda tetap terhubung dengan karya Anda."
+    requests_title: "Permintaan klien yang terstruktur"
+    requests_body: "Terima pertanyaan yang jelas dengan ide, referensi, penempatan, dan waktu — lebih sedikit bolak-balik."
+    routing_title: "Routing studio (inbox)"
+    routing_body: "Studio dapat menerima permintaan dan menugaskannya ke seniman yang tepat. Penerimaan yang rapi, pencocokan lebih baik."
+
+how_it_works:
+  title: "Cara Kerjanya"
+  subtitle: "Onboard cepat. Mulai menerima permintaan."
+  steps:
+    profile_title: "Buat profil Anda"
+    profile_body: "Tambahkan gaya, lokasi, studio, dan detail kontak."
+    upload_title: "Unggah karya terbaik Anda"
+    upload_body: "Posting tato dengan tag gaya agar klien menemukan Anda untuk karya yang tepat."
+    inquiries_title: "Dapatkan permintaan yang serius"
+    inquiries_body: "Klien menghubungi langsung — atau studio mengarahkan permintaan ke seniman yang paling cocok."
+  consumer_subtitle: "Dari inspirasi ke permintaan dalam hitungan menit"
+  consumer:
+    steps:
+      discover_title: "Temukan gaya Anda"
+      discover_body: "Gulir karya tato dan temukan seniman di Bali yang sesuai dengan gaya yang Anda inginkan."
+      pick_title: "Pilih seniman yang tepat"
+      pick_body: "Buka portofolionya, cek studio, dan pilih dengan percaya diri."
+      reach_title: "Hubungi dengan ide Anda"
+      reach_body: "Kirim permintaan Anda dan lanjutkan langkah berikutnya langsung dengan seniman atau studio."
+
+social_proof:
+  title: "Dirancang untuk kultur tato"
+  subtitle: "Lebih sedikit gangguan. Klien lebih baik. Lebih banyak kontrol."
+
+testimonials:
+  first:
+    quote: "ETCHD terasa seperti resepsionis digital — klien datang dengan ide yang nyata, bukan sekadar DM."
+    name: "Maria Santos"
+    role: "Manajer Studio, Bali"
+  second:
+    quote: "Saya tidak butuh lebih banyak follower. Saya butuh permintaan yang lebih baik. ETCHD dibuat untuk itu."
+    name: "James Chen"
+    role: "Seniman Tato, Bali"
+  third:
+    quote: "Permintaan datang terstruktur, jadi saya bisa membalas cepat dan menghindari pemboros waktu."
+    name: "Alex Rivera"
+    role: "Seniman Tato, Bali"
+
+cta:
+  title_main: "Bergabung dengan peluncuran Bali"
+  title_emphasis: "sebagai seniman atau studio"
+  subtitle: "Kami sedang onboarding kelompok terbatas seniman dan studio Bali terlebih dahulu. Siapkan profil Anda dan mulai ditemukan oleh klien yang siap booking."
+  join_title: "Bergabung dengan ETCHD"
+  consumer_title_main: "Tato Anda berikutnya"
+  consumer_title_emphasis: "dimulai di sini"
+  consumer_subtitle: "Temukan seniman tato dan studio di Bali berdasarkan gaya dan lokasi. Lihat portofolio nyata dengan kredit seniman yang tepat, lalu hubungi dengan ide Anda saat Anda siap."
+  available: "Tersedia di iOS & Android"
+  launching: "Segera hadir di Bali"
+
+buttons:
+  join_artist_studio: "Bergabung sebagai seniman / studio"
+  join_waitlist: "Gabung daftar tunggu"
+  contact_us: "Hubungi kami"
+  explore_artists: "Jelajahi seniman"
+
+consumer:
+  features:
+    title: "Dibuat untuk memilih seniman yang tepat"
+    subtitle: "Telusuri berdasarkan gaya. Simpan favorit. Kirim permintaan yang serius."
+    cards:
+      browse_title: "Telusuri berdasarkan gaya + lokasi"
+      browse_body: "Jelajahi tato di dekat Anda dan filter berdasarkan gaya, penempatan, dan studio — dengan setiap karya diberi kredit kepada senimannya."
+      portfolio_title: "Lihat portofolio asli"
+      portfolio_body: "Halaman seniman dan studio yang rapi dengan tag gaya dan karya terbaru — sehingga Anda tahu apa yang Anda dapatkan."
+      request_title: "Kirim permintaan tato"
+      request_body: "Kirim pesan ke seniman atau studio dengan ide dan referensi Anda. Tanpa permainan follower. Tanpa DM tanpa akhir."
+      save_title: "Simpan & shortlist"
+      save_body: "Simpan tato yang Anda sukai, bandingkan seniman, dan hubungi saat Anda siap berkomitmen."
+
+footer:
+  privacy: "Privasi"
+  terms: "Syarat"
+  contact: "Kontak"
+  copyright: "© 2026 ETCHD. Dibuat untuk kultur tato."
