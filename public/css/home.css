@@ -72,47 +72,46 @@ a {
 .etchd-loader__logo .l {
     display: inline-block;
     transform-style: preserve-3d;
-}
-
-.etchd-loader.is-animating .etchd-loader__logo .spin {
-    animation: etchdSlotSpin 1.4s cubic-bezier(0.22, 0.61, 0.36, 1) both;
     transform-origin: center center;
+    transform: rotateX(0deg);
 }
 
-@keyframes etchdSlotSpin {
+.etchd-loader.is-spinning .etchd-loader__logo .spin {
+    animation: etchdReelSpin var(--spin-cycle, 240ms) linear infinite;
+}
+
+.etchd-loader.is-spinning .etchd-loader__logo .spin.is-stopping {
+    animation: etchdReelStop var(--decel-duration, 450ms) cubic-bezier(0.16, 0.84, 0.28, 1) both;
+}
+
+@keyframes etchdReelSpin {
     0% {
-        transform: translateY(-120%) rotateX(0deg);
-        opacity: 0.4;
-    }
-    55% {
-        transform: translateY(12%) rotateX(720deg);
-        opacity: 1;
+        transform: rotateX(0deg);
     }
     100% {
-        transform: translateY(0%) rotateX(1080deg);
-        opacity: 1;
+        transform: rotateX(360deg);
     }
 }
 
-.etchd-loader.is-animating .etchd-loader__logo .spin:nth-child(2) {
-    animation-delay: 0.08s;
-}
-
-.etchd-loader.is-animating .etchd-loader__logo .spin:nth-child(3) {
-    animation-delay: 0.16s;
-}
-
-.etchd-loader.is-animating .etchd-loader__logo .spin:nth-child(4) {
-    animation-delay: 0.24s;
-}
-
-.etchd-loader.is-animating .etchd-loader__logo .spin:nth-child(5) {
-    animation-delay: 0.32s;
+@keyframes etchdReelStop {
+    0% {
+        transform: rotateX(var(--start-rotation, 0deg));
+    }
+    70% {
+        transform: rotateX(calc(var(--final-rotation, 360deg) + 12deg));
+    }
+    85% {
+        transform: rotateX(calc(var(--final-rotation, 360deg) - 6deg));
+    }
+    100% {
+        transform: rotateX(var(--final-rotation, 360deg));
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
     .etchd-loader__logo .spin {
         animation: none;
+        transform: rotateX(0deg);
     }
 }
 

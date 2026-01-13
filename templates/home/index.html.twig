@@ -224,24 +224,65 @@
 
             const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
             const body = document.body;
+            const letters = Array.from(loader.querySelectorAll('.etchd-loader__logo .spin'));
             const hideLoader = () => {
                 loader.style.display = 'none';
                 body.classList.remove('etchd-loader-active');
             };
 
-            body.classList.add('etchd-loader-active');
-            loader.classList.add('is-animating');
+            // Timing knobs (all milliseconds).
+            const SPIN_DURATION_BEFORE_STOPS = 700;
+            const STOP_STAGGER = 160;
+            const DECEL_DURATION = 460;
+            const SPIN_CYCLE = 220;
+            const EXTRA_ROTATIONS = 2;
 
-            const animationDuration = prefersReducedMotion ? 300 : 1400;
+            body.classList.add('etchd-loader-active');
+
+            if (prefersReducedMotion) {
+                const fadeDuration = 250;
+                window.setTimeout(() => {
+                    loader.classList.add('is-hidden');
+                }, fadeDuration);
+                window.setTimeout(() => {
+                    hideLoader();
+                }, fadeDuration + 200);
+                return;
+            }
+
+            loader.style.setProperty('--decel-duration', `${DECEL_DURATION}ms`);
+            loader.style.setProperty('--spin-cycle', `${SPIN_CYCLE}ms`);
+            loader.classList.add('is-spinning');
+
+            const startTime = performance.now();
+
+            letters.forEach((letter, index) => {
+                const stopDelay = SPIN_DURATION_BEFORE_STOPS + STOP_STAGGER * index;
+
+                window.setTimeout(() => {
+                    const elapsed = performance.now() - startTime;
+                    const currentRotation = (elapsed / SPIN_CYCLE) * 360;
+                    const normalized = currentRotation % 360;
+                    const alignToUpright = normalized === 0 ? 0 : 360 - normalized;
+                    const finalRotation = currentRotation + alignToUpright + EXTRA_ROTATIONS * 360;
+
+                    // Align the reel to a clean upright landing with a tiny overshoot bounce.
+                    letter.style.setProperty('--start-rotation', `${currentRotation}deg`);
+                    letter.style.setProperty('--final-rotation', `${finalRotation}deg`);
+                    letter.classList.add('is-stopping');
+                }, stopDelay);
+            });
+
+            const totalAnimationDuration = SPIN_DURATION_BEFORE_STOPS + STOP_STAGGER * (letters.length - 1) + DECEL_DURATION;
             const fadeDuration = 400;
 
             window.setTimeout(() => {
                 loader.classList.add('is-hidden');
-            }, animationDuration);
+            }, totalAnimationDuration);
 
             window.setTimeout(() => {
                 hideLoader();
-            }, animationDuration + fadeDuration);
+            }, totalAnimationDuration + fadeDuration);
         });
     </script>
 {% endblock %}
