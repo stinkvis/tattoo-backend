@@ -7,6 +7,12 @@
 {% endblock %}
 
 {% block body %}
+    <div id="etchd-loader" class="etchd-loader" aria-live="polite" role="status">
+        <span class="sr-only">Loading ETCHD</span>
+        <div class="etchd-loader__logo" aria-hidden="true">
+            <span class="l">E</span><span class="l">T</span><span class="l spin">C</span><span class="l">H</span><span class="l">D</span>
+        </div>
+    </div>
     <div class="page">
         <header class="site-header">
             <div class="header-shell">
@@ -209,4 +215,40 @@
             </div>
         </footer>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const loader = document.getElementById('etchd-loader');
+            if (!loader) {
+                return;
+            }
+
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            const hasSeenLoader = sessionStorage.getItem('etchd_loader_seen') === '1';
+            const body = document.body;
+            const hideLoader = () => {
+                loader.style.display = 'none';
+                body.classList.remove('etchd-loader-active');
+            };
+
+            if (hasSeenLoader) {
+                hideLoader();
+                return;
+            }
+
+            body.classList.add('etchd-loader-active');
+            loader.classList.add('is-animating');
+
+            const animationDuration = prefersReducedMotion ? 300 : 1400;
+            const fadeDuration = 400;
+
+            window.setTimeout(() => {
+                loader.classList.add('is-hidden');
+            }, animationDuration);
+
+            window.setTimeout(() => {
+                hideLoader();
+                sessionStorage.setItem('etchd_loader_seen', '1');
+            }, animationDuration + fadeDuration);
+        });
+    </script>
 {% endblock %}
