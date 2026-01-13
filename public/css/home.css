@@ -66,24 +66,48 @@ a {
     text-transform: uppercase;
     display: flex;
     align-items: center;
+    perspective: 800px;
 }
 
 .etchd-loader__logo .l {
     display: inline-block;
+    transform-style: preserve-3d;
 }
 
 .etchd-loader.is-animating .etchd-loader__logo .spin {
-    animation: etchdSpin 1.2s ease-in-out;
-    transform-origin: center;
+    animation: etchdSlotSpin 1.4s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+    transform-origin: center center;
 }
 
-@keyframes etchdSpin {
-    from {
-        transform: rotate(0deg);
+@keyframes etchdSlotSpin {
+    0% {
+        transform: translateY(-120%) rotateX(0deg);
+        opacity: 0.4;
     }
-    to {
-        transform: rotate(360deg);
+    55% {
+        transform: translateY(12%) rotateX(720deg);
+        opacity: 1;
     }
+    100% {
+        transform: translateY(0%) rotateX(1080deg);
+        opacity: 1;
+    }
+}
+
+.etchd-loader.is-animating .etchd-loader__logo .spin:nth-child(2) {
+    animation-delay: 0.08s;
+}
+
+.etchd-loader.is-animating .etchd-loader__logo .spin:nth-child(3) {
+    animation-delay: 0.16s;
+}
+
+.etchd-loader.is-animating .etchd-loader__logo .spin:nth-child(4) {
+    animation-delay: 0.24s;
+}
+
+.etchd-loader.is-animating .etchd-loader__logo .spin:nth-child(5) {
+    animation-delay: 0.32s;
 }
 
 @media (prefers-reduced-motion: reduce) {
