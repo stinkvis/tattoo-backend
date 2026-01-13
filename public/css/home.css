@@ -20,9 +20,76 @@ body {
     color: var(--text);
 }
 
+body.etchd-loader-active {
+    overflow: hidden;
+}
+
 a {
     color: inherit;
     text-decoration: none;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.etchd-loader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #b10018;
+    color: #0b0b0b;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+.etchd-loader.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.etchd-loader__logo {
+    font-size: clamp(3.5rem, 12vw, 8rem);
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.etchd-loader__logo .l {
+    display: inline-block;
+}
+
+.etchd-loader.is-animating .etchd-loader__logo .spin {
+    animation: etchdSpin 1.2s ease-in-out;
+    transform-origin: center;
+}
+
+@keyframes etchdSpin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .etchd-loader__logo .spin {
+        animation: none;
+    }
 }
 
 .page {
